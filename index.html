@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vernaix - Innovative AI Trading Models</title>
+    <title>Vernaix - Pioneering AI-Driven Trading Solutions</title>
     <style>
         /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f9fbfc;
+            color: #2c3e50;
+            line-height: 1.7;
         }
 
         a {
             text-decoration: none;
-            color: #007bff;
+            color: #2980b9;
+            transition: color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #1a5276;
         }
 
         /* Navigation */
         nav {
             background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             position: fixed;
             width: 100%;
             top: 0;
@@ -37,23 +38,30 @@
         nav ul {
             list-style: none;
             margin: 0;
-            padding: 1rem 2rem;
+            padding: 1.2rem 3rem;
             display: flex;
             justify-content: flex-start;
+            align-items: center;
         }
 
         nav ul li {
-            margin-right: 2rem;
+            margin-right: 2.5rem;
         }
 
         nav ul li a {
-            font-weight: bold;
-            color: #333;
+            font-weight: 600;
+            color: #34495e;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #2980b9;
         }
 
         /* Hero Section (Landing Page) */
         .hero {
-            background-image: url('Background.jpg'); /* Updated to use your uploaded image */
+            background-image: url('Background.jpg'); /* Ensure this matches your file name exactly (case-sensitive) */
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -72,96 +80,120 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+            background-color: rgba(0, 0, 0, 0.55); /* Slightly darker overlay for better text contrast */
+            backdrop-filter: blur(2px); /* Subtle blur for sophistication */
         }
 
         .hero-content {
             position: relative;
             z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
+            max-width: 900px;
+            padding: 3rem;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
         }
 
         .btn {
-            background-color: #007bff;
+            background-color: #2980b9;
             color: #ffffff;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            font-weight: bold;
+            padding: 1.2rem 2.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #1a5276;
+            transform: translateY(-2px);
             text-decoration: none;
         }
 
         /* Sections */
         section {
-            padding: 6rem 2rem 4rem;
+            padding: 7rem 3rem 5rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
             text-align: center;
+            font-weight: 700;
+            color: #2c3e50;
+            letter-spacing: 0.5px;
         }
 
         /* About Page */
         .about-content {
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
+            font-size: 1.1rem;
+            color: #34495e;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
         }
 
         /* Contact Page */
         .contact-content {
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
+            font-size: 1.1rem;
         }
 
         .contact-content p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
         }
 
         /* Footer */
         footer {
-            background-color: #333;
-            color: #ffffff;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
 
             .hero p {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             nav ul {
                 flex-direction: column;
                 align-items: center;
+                padding: 1rem;
             }
 
             nav ul li {
-                margin: 0.5rem 0;
+                margin: 0.8rem 0;
+            }
+
+            section {
+                padding: 6rem 2rem 4rem;
             }
         }
     </style>
@@ -181,8 +213,8 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Welcome to Vernaix</h1>
-            <p>Innovating AI and Machine Learning for Advanced Trading Models</p>
-            <a href="#about" class="btn">Learn More</a>
+            <p>Pioneering AI and Machine Learning Innovations for Sophisticated Trading Strategies</p>
+            <a href="#about" class="btn">Discover More</a>
         </div>
     </section>
 
@@ -190,9 +222,9 @@
     <section id="about">
         <h2>About Vernaix</h2>
         <div class="about-content">
-            <p>At Vernaix, we pioneer the intersection of advanced artificial intelligence and financial markets, crafting proprietary trading models that harness the power of state-of-the-art reinforcement learning and transformer architectures to anticipate and capitalize on market dynamics.</p>
-            <p>Our innovative methodologies incorporate novel, unexplored paradigms in adaptive learning, enabling the creation of unprecedented strategies that redefine efficiency and foresight in trading environments.</p>
-            <p>Specializing in the orchestration of large language models, we architect, refine, and deploy sophisticated systems that drive superior performance, all while safeguarding the integrity of our intellectual property. As an emerging force in fintech, we are committed to securing foundational support to propel our vision forward, fostering breakthroughs that shape the future of intelligent trading.</p>
+            <p>Vernaix stands at the vanguard of financial technology, engineering proprietary trading frameworks that integrate advanced reinforcement learning paradigms and transformer-based architectures to navigate and exploit intricate market volatilities with unparalleled precision.</p>
+            <p>Our bespoke methodologies draw upon emergent, underexplored frontiers in adaptive intelligence, forging novel strategic paradigms that elevate predictive accuracy and operational efficacy in dynamic trading landscapes.</p>
+            <p>With a specialized focus on harnessing the capabilities of large language models, we meticulously design, optimize, and implement elite systems that deliver exceptional outcomes, all while upholding the utmost confidentiality of our intellectual assets. As a forward-thinking fintech enterprise, we are actively pursuing foundational investments to accelerate our trajectory, catalyzing transformative advancements in the realm of intelligent capital markets.</p>
         </div>
     </section>
 
@@ -200,14 +232,14 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact-content">
-            <p>For inquiries, please reach out to us at:</p>
+            <p>For inquiries or collaboration opportunities, please connect with us at:</p>
             <p><a href="mailto:info@vernaix.com">info@vernaix.com</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Vernaix. All rights reserved.</p>
+        <p>&copy; 2025 Vernaix. All Rights Reserved.</p>
     </footer>
 
 </body>
